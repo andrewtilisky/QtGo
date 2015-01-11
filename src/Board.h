@@ -1,0 +1,87 @@
+/*
+ * Board.h
+ *
+ *  Created on: Nov 18, 2013
+ *      Author: Andrew Tilisky
+ */
+
+#ifndef BOARD_H_
+#define BOARD_H_
+
+#include <algorithm>
+#include <iostream>
+#include <vector>
+#include <omp.h>
+
+#include "boost/ptr_container/serialize_ptr_vector.hpp"
+#include <QtCore/qdebug.h>
+
+#include "Point.h"
+#include "rules.h"
+
+using namespace std;
+
+class Board {
+public:
+	Board(const unsigned char dimensions);
+	Board(const Board& obj);
+	virtual ~Board();
+//    Board& operator= (const Board& other);
+
+	unsigned char dimensions() const;
+	unsigned short points() const;
+	unsigned short index(unsigned char x, unsigned char y) const;
+	bool outOfBounds(unsigned char x, unsigned char y) const;
+
+	bool isEmpty(const unsigned char x, const unsigned char y) const;
+	bool isBlack(const unsigned char x, const unsigned char y) const;
+
+	unsigned short stones() const;
+	unsigned short blackStones() const;
+	unsigned short whiteStones() const;
+	unsigned short territory(const bool black) const;
+
+	const Point point(unsigned char x, unsigned char y) const;
+
+	void place(const bool black, const unsigned char x, const unsigned char y);
+	bool placementIsLegal(const bool black, const unsigned char x,
+			const unsigned char y);
+	void printBoard() const;
+	bool holdsTerritory(const unsigned char x, const unsigned char y) const;
+
+private:
+	const unsigned char mDimensions;
+	unsigned short mStones, mBlack_stones, mWhite_stones;
+	boost::ptr_vector<Point> mPoints;
+
+	bool willBeTakenCpu(bool black, unsigned char x, unsigned char y) const;
+	void captureStones(const bool black);
+
+	//i'm not sure if having algorithms in a board class is a good idea
+	//but the benefits of refactoring don't seem great enough.
+	//this means a separate cuda implementation Board.cu of this class might
+	//be necessary.
+	//territory determination algorithm
+	int pointIsHeldBy(unsigned char x, unsigned char y) const;
+	bool discoverHolderRecursively(int x, int y, char search_flag) const;
+
+	//capture determination algorithm
+	int pointWillBeCaptured(unsigned char x, unsigned char y, bool isBlack) const;
+	bool hasLiberty(int x, int y, bool isBlack, bool* wereHere) const;
+
+	void capture(unsigned char x, unsigned char y);
+
+	class pointsnotinitializedexception: public exception {
+		const char* what() const throw () {
+			return "The point matrix hasn't been properly initialized";
+		}
+	};
+
+	class coordinatesoutofboundsexception: public exception {
+		const char* what() const throw () {
+			return "The coordinates are outside the bounds of the board.";
+		}
+	};
+};
+
+#endif /* BOARD_H_ */

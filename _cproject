@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="ai3.toolchain.cuda_qt.285541518">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="ai3.toolchain.cuda_qt.285541518" moduleId="org.eclipse.cdt.core.settings" name="Default">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="ai3.errorparser.cuda_qt.nvccerrorparser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration buildProperties="" description="" id="ai3.toolchain.cuda_qt.285541518" name="Default" parent="org.eclipse.cdt.build.core.emptycfg">
+					<folderInfo id="ai3.toolchain.cuda_qt.285541518.1378714929" name="/" resourcePath="">
+						<toolChain id="ai3.toolchain.cuda_qt.875509196" name="ai3.toolchain.cuda_qt" superClass="ai3.toolchain.cuda_qt">
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="ai3.target.cuda_qt.1965081439" name="CUDA Platform" osList="linux,hpux,aix,qnx" superClass="ai3.target.cuda_qt"/>
+							<builder buildPath="/home/andrew/Downloads/build-minigo-Desktop-Debug" id="ai3.target.cuda_qt.builder.1406956389" keepEnvironmentInBuildfile="false" managedBuildOn="false" name="CUDA Builder" superClass="ai3.target.cuda_qt.builder"/>
+							<tool id="ai3.toolchain.cuda_qt.moc.1575611611" name="QT Meta-Object Compiler" superClass="ai3.toolchain.cuda_qt.moc"/>
+							<tool id="ai3.tool.cuda_qt.cpp_compiler.1185215196" name="C++ Compiler" superClass="ai3.tool.cuda_qt.cpp_compiler">
+								<inputType id="ai3.tool.cuda_qt.cpp_compiler.input.400702957" superClass="ai3.tool.cuda_qt.cpp_compiler.input"/>
+							</tool>
+							<tool id="ai3.tool.cuda_qt.c_compiler.505989942" name="C Compiler" superClass="ai3.tool.cuda_qt.c_compiler">
+								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.1071626110" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+							</tool>
+							<tool id="ai3.tool.cuda_qt.nvcc.480758487" name="CUDA NVCC Compiler" superClass="ai3.tool.cuda_qt.nvcc">
+								<inputType id="ai3.tool.cuda_qt.nvcc.input.1216038373" name="CUDA Input" superClass="ai3.tool.cuda_qt.nvcc.input"/>
+							</tool>
+							<tool id="ai3.tool.cuda_qt.c_linker.305697265" name="C Linker" superClass="ai3.tool.cuda_qt.c_linker"/>
+							<tool id="ai3.tool.cuda_qt.cpp_linker.1511704553" name="C++ Linker" superClass="ai3.tool.cuda_qt.cpp_linker">
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.1433201559" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="ai3.tool.cuda_qt.gnu_archiver.1405674703" name="GNU Archiver" superClass="ai3.tool.cuda_qt.gnu_archiver"/>
+							<tool id="ai3.tool.cuda_qt.gnu_assembler.1931837930" name="GNU Assembler" superClass="ai3.tool.cuda_qt.gnu_assembler">
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1674752624" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+			<storageModule moduleId="com.nvidia.cuda.ide.build.project.ICudaProjectConfiguration"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		<scannerConfigBuildInfo instanceId="0.1523730496">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.cross.exe.debug.27846549;cdt.managedbuild.config.gnu.cross.exe.debug.27846549.;cdt.managedbuild.tool.gnu.cross.cpp.compiler.208858062;cdt.managedbuild.tool.gnu.cpp.compiler.input.344486493">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.cross.exe.debug.27846549;cdt.managedbuild.config.gnu.cross.exe.debug.27846549.;cdt.managedbuild.tool.gnu.cross.c.compiler.2130818943;cdt.managedbuild.tool.gnu.c.compiler.input.1950688892">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.toolchain.gnu.cross.base.1178708698;cdt.managedbuild.toolchain.gnu.cross.base.1178708698.1205056308;cdt.managedbuild.tool.gnu.cross.cpp.compiler.399034290;cdt.managedbuild.tool.gnu.cpp.compiler.input.124132008">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.nvidia.cuda.ide.configuration.debug.201837065;com.nvidia.cuda.ide.configuration.debug.201837065.;nvcc.compiler.base.1043020080;nvcc.compiler.input.cpp.326581284">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.nvidia.cuda.ide.build.NVCCPerProjectProfile"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.toolchain.gnu.cross.base.1178708698;cdt.managedbuild.toolchain.gnu.cross.base.1178708698.1205056308;cdt.managedbuild.tool.gnu.cross.c.compiler.1519836568;cdt.managedbuild.tool.gnu.c.compiler.input.1130465663">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.nvidia.cuda.ide.configuration.debug.201837065;com.nvidia.cuda.ide.configuration.debug.201837065.;nvcc.compiler.base.1043020080;nvcc.compiler.input.c.565499424">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.nvidia.cuda.ide.build.NVCCPerProjectProfile"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.nvidia.cuda.ide.configuration.debug.201837065;com.nvidia.cuda.ide.configuration.debug.201837065.;nvcc.compiler.base.1043020080;nvcc.compiler.input.cu.56432850">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.nvidia.cuda.ide.build.NVCCPerProjectProfile"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="0.1042829820">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="minigo.null.1617052090" name="minigo"/>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="refreshScope" versionNumber="2">
+		<configuration configurationName="Default">
+			<resource resourceType="PROJECT" workspacePath="/minigo"/>
+		</configuration>
+	</storageModule>
+</cproject>

@@ -1,0 +1,1 @@
+/home/andrew/build-minigo-Desktop_Qt_5_2_1_GCC_64bit-Debug/Makefile
